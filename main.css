@@ -27,7 +27,6 @@ main {
   align-items: center;
 }
 
-
 /* Todo Wrapper styles */
 .todo-wrapper {
   width: 580px;
@@ -67,6 +66,42 @@ main {
 
 .todo-header svg {
   width: 20px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
+/* Add todo form styles */
+.add-todo-form {
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  width: 95%;
+  border: none;
+  font-style: italic;
+  font-weight: lighter;
+  padding-left: 5px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button[type="submit"] {
+  border: none;
+  background: none;
+}
+
+.material-icons,
+.enter-arrow {
   color: #b3b3b3;
   cursor: pointer;
 }
