@@ -1,0 +1,72 @@
+/* Open Sans - Google font importing */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  background-color: #f6f6f6;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  color: #1d1d1d;
+}
+
+ul li {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Todo Wrapper styles */
+.todo-wrapper {
+  width: 580px;
+  max-height: 660px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 2px 8px rgb(0 0 0 / 15%);
+}
+
+.todo-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.todo-wrapper::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #d8d8d8;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.todo-header h2 {
+  font-size: 16px;
+}
+
+.todo-header svg {
+  width: 20px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
